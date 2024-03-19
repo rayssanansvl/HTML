@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rayssa</title>
+
+    <style>
+      body {
+        background-color: #7eb59f;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 5px #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Documento da Rayssa</h1>
+      <p>
+        Olá, eu sou a Rayssa e estou cursando Desenvolvimento de Sistemas.
+        <br />
+        E esse documento é um teste da aula sobre HTML!
+      </p>
+      <!-- <p>document.getElementsByTagName("body")[0].style.background = "#96cbb6"</p> -->
+    <h1>Aula 01- HTML | CSS | JS</h1>
+    <h2>Alerta de mensagem!</h2>
+    <p style="text-align: center">
+      <button onclick="alerta()" style="">Alerta!</button>
+    </p>
+    <h2>Altere a cor do fundo do site clicando em uma das cores abaixo:</h2>
+    <p style="text-align: center">
+      <button onclick="roxo()" style="background-color: purple;">
+        Roxo
+      </button>
+      <button onclick="laranja()" style="background-color: darkorange">
+        Laranja
+      </button>
+      <button onclick="amarelo()" style="background-color: yellow">
+        Amarelo
+      </button>
+      <button onclick="original()" style="background-color: #7eb59f">
+        Original
+      </button>
+    </p>
+  </body>
+  <script>
+    console.log("Olá Mundo!");
+
+    function alerta() {
+      var nome = prompt("Olá, informe seu nome:");
+      alert(`Olá ${nome}!`);
+    }
+    function roxo() {
+      document.getElementsByTagName("body")[0].style.background = "purple";
+    }
+    function laranja() {
+      document.getElementsByTagName("body")[0].style.background = "orange";
+    }
+    function amarelo() {
+      document.getElementsByTagName("body")[0].style.background = "yellow";
+    }
+    function original() {
+      document.getElementsByTagName("body")[0].style.background = "#7eb59f";
+    }
+  </script>
+</html>
