@@ -14,23 +14,24 @@
     </style>
   </head>
   <body>
-    <h1><center><ins>☆ Documento da Rayssa ☆</ins></center></h1>
-      <p>
-        <center>Olá, eu sou a Rayssa e estou cursando Desenvolvimento de Sistemas.</center>
-        <br />
-        <center>E esse documento é um teste da aula sobre HTML!</center>
-      </p>
-      <!-- <p>document.getElementsByTagName("body")[0].style.background = "#96cbb6"</p> -->
-    <h1><center>Aula 01- HTML | CSS | JS</center></h1>
-    <h2><center>Alerta de mensagem!</center></h2>
+    <h1 style="text-align: center"><ins>☆ Documento da Rayssa ☆</ins></h1>
+    <p style="text-align: center">
+      Olá, eu sou a Rayssa e estou cursando Desenvolvimento de Sistemas.
+    </p>
+    <p style="text-align: center">
+      E esse documento é um teste da aula sobre HTML!
+    </p>
+    <!-- <p>document.getElementsByTagName("body")[0].style.background = "#96cbb6"</p> -->
+    <h1 style="text-align: center">Aula 01- HTML | CSS | JS</h1>
+    <h2 style="text-align: center">Alerta de mensagem!</h2>
     <p style="text-align: center">
       <button onclick="alerta()" style="">Alerta!</button>
     </p>
-    <h2><center>Altere a cor do fundo do site clicando em uma das cores abaixo:</center></h2>
+    <h2 style="text-align: center">
+      Altere a cor do fundo do site clicando em uma das cores abaixo:
+    </h2>
     <p style="text-align: center">
-      <button onclick="roxo()" style="background-color: purple;">
-        Roxo
-      </button>
+      <button onclick="roxo()" style="background-color: purple">Roxo</button>
       <button onclick="laranja()" style="background-color: darkorange">
         Laranja
       </button>
@@ -48,18 +49,18 @@
     function alerta() {
       var nome = prompt("Olá, informe seu nome:");
       alert(`Olá ${nome}!`);
-    };
+    }
     function roxo() {
-      document.getElementsByTagName("body")[0].style.background = "purple"
-    };
+      document.getElementsByTagName("body")[0].style.background = "purple";
+    }
     function laranja() {
-      document.getElementsByTagName("body")[0].style.background = "orange"
-    };
+      document.getElementsByTagName("body")[0].style.background = "orange";
+    }
     function amarelo() {
-      document.getElementsByTagName("body")[0].style.background = "yellow"
-    };
+      document.getElementsByTagName("body")[0].style.background = "yellow";
+    }
     function original() {
-      document.getElementsByTagName("body")[0].style.background = "#7eb59f"
-    };
+      document.getElementsByTagName("body")[0].style.background = "#7eb59f";
+    }
   </script>
 </html>
