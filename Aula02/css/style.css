@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+  /* background: #123456 url(../img/imagemtanjiro.jpg) no-repeat top/cover; */
+  background: #E8D8C4;
+  color: #6D2932;
+  margin: 0;
+  padding: 0;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: #561C24;
+}
+.textoCentro {
+    text-align: center;
+}
+
+.fundoLindo {
+    background: #C7B7A3;
+}
+
+h1.textoCentro {
+    margin-top: 0;
+    padding: 10px;
+}
+
+h1 a {
+    background: #FDF0D1;
+    padding: 5px;
+    border: solid 2px #6D2932;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px;
+}
+
+h1 a:hover {
+    background: #F5EEE6;
+}
