@@ -16,23 +16,33 @@
       <a href="https://instagram.com" target="_top">Instagram</a>
     </h1>
 
-    <form class="textoCentro" action="">
+    <form class="textoCentro" onsubmit="console.log(`Enviou`)">
       <h3>Entre em contato</h3>
       <p>Ficaremos felizes em atende-lo</p>
       <p>
-        <input type="text" size="40" placeholder="Nome:" />
+        <input id="nome" type="text" size="40" placeholder="Nome:" required />
         <br />
-        <input type="email" size="40" placeholder="E-mail" />
+        <input
+          id="email"
+          type="email"
+          size="40"
+          placeholder="E-mail"
+          required
+        />
         <br />
         <textarea
+          id="areaTexto"
           name=""
-          id=""
           cols="40"
           rows="10"
           placeholder="Mensagem:"
+          minlength="10"
+          required
         ></textarea>
       </p>
-      <input type="submit" value="Enviar" />
+      <input type="button" onclick="enviar()" value="Enviar" />
     </form>
+    <span id="resposta"></span>
   </body>
+  <script src="./js/script.js"></script>
 </html>
