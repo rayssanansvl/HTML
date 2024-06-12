@@ -8,16 +8,33 @@
 /* Variáveis que podem ser usadas para todo o documento. */
 /* Ativo somente no Dark Mode */
 :root {
-  --bg-url: url(../img/backgroundDark.png);
+  --bg-url: url(../img/fundoescuro.png);
+  --text-color: #fff;
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(6, 115, 211, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.2);
+  --switch-gb-url: url(../img/MoonStars.svg);
+  --highlight-color: rgba(133, 222, 249, 0.3);
+}
+/* class para criar o modo Light */
+.light {
+  --bg-url: url(../img/fundoclaro.png);
+  --text-color: #254765;
+  --stroke-color: rgb(1, 81, 211);
+  --surface-color: rgba(137, 176, 220, 0.815);
+  --surface-color-hover: rgba(164, 196, 231, 0.2);
+  --switch-gb-url: url(../img/Sun.svg);
+  --highlight-color: rgba(66, 91, 173, 0.3);
 }
 
 body {
   background: var(--bg-url) no-repeat top center / cover;
   height: 100vh;
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 #container {
   width: 100%;
@@ -35,6 +52,8 @@ body {
 #perfil img {
   width: 112px;
   height: 112px;
+  border-radius: 50%;
+  border: 3px solid var(--stroke-color);
   object-fit: cover;
 }
 
@@ -56,7 +75,7 @@ body {
   height: 32px;
   border-radius: 50%;
   border: 0;
-  background: #fff url(../img/MoonStars.svg) no-repeat center;
+  background: #fff var(--switch-gb-url) no-repeat center;
 
   position: absolute;
   z-index: 1;
@@ -66,17 +85,21 @@ body {
   animation: slide-out 0.2s;
 }
 
+.light #botao button {
+  animation: slide-in 0.2s forwards;
+}
+
 #botao button:hover {
-  outline: 8px solid rgba(255, 255, 255, 0.2);
+  outline: 8px solid var(--surface-color-hover);
   transition: all 0.2s;
 }
 
 #botao span {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--surface-color);
   display: block;
   width: 54px;
   height: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--stroke-color);
   border-radius: 24px;
 
   backdrop-filter: blur(4px);
@@ -96,17 +119,17 @@ body {
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--surface-color);
   text-decoration: none;
   font-weight: 500;
-  color: #fff;
+  color: var(--text-color);
 }
 
 #links ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #fff;
+    background: var(--surface-color-hover);
+    border: 1px solid var(--text-color);
 }
 
 #redeSocial{
@@ -117,9 +140,9 @@ body {
     font-size: 24px;
 }
 
-#redeSocial a{
+#redeSocial a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
 }
 
 #footer{
@@ -130,7 +153,7 @@ body {
 
 #footer a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
 }
 
 /* animação do botão */
